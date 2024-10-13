@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Registration System for managing student records.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header section-->>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Easily Register, Update, and Manage student details in a visually appealing interface.</p>
+    </header>
+
+    <!-- Form Section -->
+    <section id="registration-section">
+        <form id="registrationForm">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" required placeholder="Enter student name">
+
+            <label for="studentID">Student ID:</label>
+            <input type="number" id="studentID" required placeholder="Enter student ID">
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" required placeholder="Enter email ID">
+
+            <label for="contact">Contact No:</label>
+            <input type="text" id="contact" required placeholder="Enter contact number" maxlength="10">
+
+            <button type="submit">Register Student</button>
+        </form>
+    </section>
+
+    <!-- Button to view registered students -->
+    <button class="view-students-btn" id="viewStudentsBtn">View Registered Students</button>
+
+    <!-- Display Section -->
+    <section id="studentList">
+        <h2>Registered Students</h2>
+        <table id="studentTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Student ID</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content -->
+            </tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
